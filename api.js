@@ -1,25 +1,19 @@
-import { initializeApp } from "firebase/app"
-import {
-    getFirestore,
-    collection,
-    doc,
-    getDocs,
-    getDoc,
-    query,
-    where,
-    documentId
-} from "firebase/firestore/lite"
+
+import { initializeApp } from "firebase/app";
+import { getFirestore, collection } from "firebase/firestore/lite"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD_k3v3HK3tKEqhlqFHPkwogW7PqEqhGhk",
-    authDomain: "vanlife-a1af5.firebaseapp.com",
-    projectId: "vanlife-a1af5",
-    storageBucket: "vanlife-a1af5.appspot.com",
-    messagingSenderId: "803007000356",
-    appId: "1:803007000356:web:446cd3a1ca406839258db1"
+  apiKey: "AIzaSyAHb3FfiJNjR2N3S0ivtqx6-nWmpICSPls",
+  authDomain: "vanlife-d4675.firebaseapp.com",
+  projectId: "vanlife-d4675",
+  storageBucket: "vanlife-d4675.appspot.com",
+  messagingSenderId: "605551345116",
+  appId: "1:605551345116:web:6151b812d0ec5d04b86319",
+  measurementId: "G-HSC8J35KPZ"
 };
 
-const app = initializeApp(firebaseConfig)
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 
 // Refactoring the fetching functions below
